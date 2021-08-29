@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task_3</title>
+    </head>
+    <body>
+        <form>
+            <label for="username">ФИО
+                <input type="text" id="username" name="username" placeholder="Петров Пётр Петрович" pattern="([A-Za-zА-Яа-яЁё]).{5,25}" title="от 5 до 25 букв" required>
+            </label><br>
+            <label for="email">Email
+                <input type="email" id="email" name="email" placeholder="Введите email" pattern="(([a-zA-Z0-9]{,3})+\@\+([a-z]{,3})+\.\+([a-z]{,2}))" title="введите минимум 3 символа, @, минимум 3 символа, точка, минимум 3 символа" required>
+            </label><br>
+            <label for="password">Пароль
+                <input type="password" id="password" name="password" placeholder="Введите пароль" pattern="((?=.*[A-Z])(?=.*[0-9]).{8,})" title="введите минимум 8 символов, одну цифру и одну заглавную букву">
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>
