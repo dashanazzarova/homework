@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'NotoSansHK';
+    src: url('../fonts/NotoSansHK-Bold.otf');
+}
+
+@font-face {
+    font-family: 'NotoSansHK';
+    src: url('../fonts/NotoSansHK-Light.otf');
+}
+
+@font-face {
+    font-family: 'NotoSansHK';
+    src: url('../fonts/NotoSansHK-Medium.otf');
+}
+
+@font-face {
+    font-family: 'NotoSansHK';
+    src: url('../fonts/NotoSansHK-Regular.otf');
+}
+
+body {
+    font-family: 'NotoSansHK';
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.header__logo {
+    height: 100px;
+    width: 200px;
+    border: 2px double #708090;
+
+}
+
+.header__heading {
+    opacity: 0.7;
+}
+
+.main__list {
+    display: flex;
+    padding-top: 30px;
+}
+
+.main__item {
+    background-image: linear-gradient(pink, purple);
+    min-height: min-content;
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #C0C0C0;
+    border-radius: 15px;
+    border: black ;
+}
+
+.main__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.main__heading {
+    color: 	#708090;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.footer__desc {
+    background-image: url('/imgs/footer__img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 400px;
+}
