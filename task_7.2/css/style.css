@@ -1,0 +1,52 @@
+.block {
+    padding-left: 50px;
+}
+
+.one {
+    position: relative;
+    z-index: 3;
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    left: 260px;
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three {
+    position: absolute;
+  
+    top: 140px;
+    width: 400px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four {
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    left: 260px;
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
