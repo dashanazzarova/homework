@@ -1,0 +1,55 @@
+.text {
+    text-indent: 1.5em;
+    word-spacing: 20px;
+    letter-spacing: 1px;
+    word-break: break-all ;
+}
+
+.href {
+    pointer-events: none;
+}
+
+.text2 {
+    visibility: hidden;
+}
+
+.transform {
+    border: solid green;
+    transform: translate(30px, 20px) rotate(20deg);
+    width: 200px;
+    height: 100px;
+    margin-bottom: 60px;
+}
+b:first-child {
+    color: blue;
+}
+
+b:last-child {
+    color: coral;
+}
+
+b:not(:last-child) {
+    font-size: 20px;
+}
+
+b:nth-child(2n) {
+    background-color: darkcyan;
+}
+
+.text3::first-letter {
+    color: darkmagenta;
+}
+
+.text3::first-line {
+    font-style: italic;
+}
+
+.text4::after {
+    content: "Кошка";
+    background-color: darkmagenta;
+}
+
+.text4::before {
+    content: "Cat";
+    background-color: darkred;
+}
