@@ -1,0 +1,38 @@
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.header, .footer {
+    min-height: 100px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidenav, .sidebar {
+    text-align: center;
+    display: inline-block;
+    background-color: crimson;
+    width: 20%;
+    min-height: calc(100vh - 200px);
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+.main {
+    vertical-align: middle;
+    display: inline-block;
+    background-color: darkkhaki;
+    width: 60%;
+    min-height: calc(100vh - 200px);
+    margin: 0 -4px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    color: white;
+}
