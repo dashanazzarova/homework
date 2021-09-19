@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+           url("/fonts/Montserrat-Regular.woff") format("woff");
+   }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Medium.woff2") format("woff2"),
+           url("/fonts/Montserrat-Medium.woff") format("woff");
+   }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+           url("/fonts/Montserrat-SemiBold.woff") format("woff");
+   }
+
+body {
+    font-family: "Montserrat";
+    background-color: #D3D3D3;
+}
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    padding: 20px 30px 20px 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.about__block {
+    background-color: white;
+    padding: 20px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.text, .content__text {
+    color: lightslategray;
+}
+
+.about__heading {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #2F4F4F;
+}
+
+.content__block {
+    padding: 20px 15px 30px 15px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #2F4F4F;
+    margin-bottom: 10px;
+}
+
+.content__text {
+    margin-bottom: 30px;
+}
+
+.content__heading {
+    font-size: 25px;
+    color: #2F4F4F;
+    margin-bottom: 10px;
+}
+
+.content__navigation {
+    background-color: white; 
+    padding: 20px 15px 20px 15px;
+}
+
+.content__list {
+    background-color: #C0C0C0;
+    padding: 15px 15px 15px 15px;
+}
+
+.content__href {
+    color: #696969;
+}
+
+.content__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about__block {
+        width: calc(50% - 10px);
+        margin-right: 0;
+    }
+
+    .about__block:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .about__block:last-child {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .about__block:first-child {
+        margin-right: 20px;
+    }
+
+    .content__block {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    .about {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .about__block {
+        width: calc(100/3 - 20px);
+    }
+
+    .about__block:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .content__block {
+        width: 67%;
+        margin-bottom: 0;
+    }
+
+    .content__navigation {
+        width: 33%;
+    }
+
+}
