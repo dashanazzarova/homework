@@ -1,0 +1,72 @@
+@import 'reset';
+
+$primary-color: blue;
+$primary-mb: 20px;
+$primary-border: 1px solid black;
+
+body {
+    background-color: blueviolet;
+}
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    padding: 50px 30px 50px 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.blocks {
+    margin-bottom: $primary-mb;
+
+    @media all and (min-width: 580px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.blocks {
+    &__item {
+        background-color: $primary-color;
+        min-height: 200px;
+        border: $primary-border;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media all and (min-width: 1023px) {
+            flex-grow: 1;
+        }
+    }
+}
+
+.sidebar {
+    border: $primary-border;
+    padding: 20px;
+
+    @media all and (min-width: 580px) {
+        width: calc(100%/2 - 10px);
+    }
+
+    @media all and (min-width: 1023px) {
+        width: calc(30%);
+    }
+}
+
+.item__blocks {
+    @media all and (min-width: 580px) {
+        width: calc(100%/2 - 10px);
+        margin-right: 20px;
+    }
+
+    @media all and (min-width: 1023px) {
+        display: flex;
+        flex-direction: row;
+        width: calc(70% - 20px);
+    }
+}
