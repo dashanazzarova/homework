@@ -8,75 +8,170 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link href="./css/all.min.css" rel="stylesheet"> 
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header class="navbar container"> 
-            <img src="img/logo.svg" alt="">
-            <ul class="navbar__list">
-                <li class="navbar__list__item active">
-                    <a href="">Home</a>
-                </li>
-                <li class="navbar__list__item">
-                    <a href="">About us</a>
-                </li>
-                <li class="navbar__list__item">
-                    <a href="">Find space</a>
-                </li>
-                <li class="navbar__list__item">
-                    <a href="">Share space</a>
-                </li>
-                <li class="navbar__list__item">
-                    <a href="">Promote space</a>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <section class="intro">
-                <div class="container">
-                    <div class="intro__row">
-                        <div class="col_1">
-                            <h1 class="main-heading">Find your custom matched commercial real estate space.</h1>
-                            <p class="text">In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique</p>
-                            <form action="" class="intro__form">
-                                <input type="email" placeholder="Your email address" name="" id="" class="intro__form__input">
-                                <input type="submit" value="Subscribe" name="" id="" class="btn">
-                            </form>
+        <div id="wrapper">
+            <header class="navbar container"> 
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+                <ul class="navbar-list">
+                    <li class="navbar-list-item active">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="">About us</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="">Find space</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="">Share space</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="">Promote space</a>
+                    </li>
+                </ul>
+            </header>
+            <main>
+                <section class="intro">
+                    <div class="container">
+                        <div class="intro-row">
+                            <div class="col-1">
+                                <h1 class="main-heading">Find your custom matched commercial real estate space.</h1>
+                                <p class="text">In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique</p>
+                                <form action="" class="intro-form">
+                                    <input type="email" placeholder="Your email address" name="" id="" class="intro-form-input">
+                                    <input type="submit" value="Subscribe" name="" id="" class="btn">
+                                </form>
+                            </div>
+                            <div class="col-2">
+                                <img src="./img/intro_img.jpg" class="intro-img">
+                            </div>
                         </div>
-                        <div class="col_2">
-                            <img src="./img/intro_img.jpg" class="intro__img">
+                    </div>
+                </section>
+                <section class="logo container">
+                    <ul class="logo-list">
+                        <li class="logo-item">
+                            <img src="./img/logo_sec.svg">
+                        </li>
+                        <li class="logo-item">
+                            <img src="./img/logo2_sec.svg">
+                        </li>
+                        <li class="logo-item">
+                            <img src="./img/logo3_sec.svg">
+                        </li>
+                        <li class="logo-item">
+                            <img src="./img/logo4_sec.svg">
+                        </li>
+                    </ul>
+                </section>
+                <section class="content container">
+                    <div class="col-1">
+                        <img src="./img/content_img.jpg" class="content-img">
+                        <img src="./img/content_img2.jpg" class="content-img-2">
+                    </div>
+                    <div class="col-2">
+                        <h2 class="heading">We provide best space for you!</h2>
+                        <p class="text">Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex ea quid est et via procedat oratio quaerimus.</p>
+                        <P class="text">quid aut ad id omnia referri oporteat, ipsum autem nusquam hoc epicurus in ea commodi consequatur?</p>
+                        <button type="submit" class="btn">Learn more</button>
+                    </div>
+                </section>
+                <section class="use container">
+                    <div class="col">
+                        <h2 class="heading">
+                            Start using our product
+                        </h2>
+                        <p class="text">Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex</p>
+                        <div class="use-buttons">
+                            <button class="btn">Contact Us</button>
+                            <button class="use-btn"><i class="fas fa-caret-right"></i>Watch us</button>
+                        </div>
+                </section>
+                <!-- <section class="expert">
+                    <div class="container">
+                        <div class="col">
+                            <h2 class="heading">
+                                Get experience from the expert
+                            </h2>
+                            <p class="text">Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex</p>
+                            <button class="btn">Contact us</button>
+                            <img src="./img/person__expert.png" class="expert-img">
+                        </div>
+                    </div>
+                </section> -->
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-row">
+                        <div class="col-1">
+                            <div class="col-1-inner">
+                                <a href="#"><img src="img/logo.svg" alt=""></a>
+                                <p>Quae fuerit causa, nollem me ab illo inventore veritatis et.</p>
+                                <div class="social-links">
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-row-2">
+                            <div class="col">
+                                <h4 class="footer-heading">Privacy</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-list-item">
+                                        <a href="#">Si sine causa</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a href="#">Quae fuerit causa</a>
+                                    </li class="footer-list-item">
+                                    <li class="footer-list-item">
+                                        <a href="#">Certe, inquam</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a href="#">Torquatos nostros? </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4 class="footer-heading">Legal</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-list-item">
+                                        <a href="#">Ut placet, inquam </a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a href="#">Certe, inquam</a>
+                                    </li class="footer-list-item">
+                                    <li class="footer-list-item">
+                                        <a href="#">Et quidem rerum</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a href="#">At vero eos et</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4 class="footer-heading">Contact</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-list-item">
+                                        <a href="#">Primum igitur</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a href="#">Certe, inquam</a>
+                                    </li>
+                                    <li class="footer-list-item">
+                                        <a href="#">Quae fuerit causa</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="logo container">
-                <ul class="logo__list">
-                    <li class="logo__item">
-                        <img src="./img/logo_sec.svg">
-                    </li>
-                    <li class="logo__item">
-                        <img src="./img/logo_sec.svg">
-                    </li>
-                    <li class="logo__item">
-                        <img src="./img/logo3_sec.svg">
-                    </li>
-                    <li class="logo__item">
-                        <img src="./img/logo4_sec.svg">
-                    </li>
-                </ul>
-            </section>
-            <section class="content container">
-                <div class="col_1">
-                    <img src="./img/content_img.jpg" class="content__img">
-                    <img src="./img/content_img2.jpg">
-                </div>
-                <div class="col_2">
-                    <h2 class="heading">We provide best space for you!</h2>
-                    <p class="text">Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex ea quid est et via procedat oratio quaerimus.</p>
-                    <P class="text">quid aut ad id omnia referri oporteat, ipsum autem nusquam hoc epicurus in ea commodi consequatur?</p>
-                    <button type="submit" class="btn">Learn more</button>
-                </div>
-            </section>
-        </main>
+            </footer>
+        </div>
+      
     </body>
 </html>
