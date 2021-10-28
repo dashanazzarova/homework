@@ -59,16 +59,13 @@ input {
         &-item {
             margin-left: 42px;
 
-            a {
-                color: $darkgrey;
-                text-decoration: none;
+            &:hover {
+                color: $orange;
             }
 
-            &.active {
-                a {
-                    color: $orange;
-                    font-weight: 700;
-                }
+            a {
+                color: $darkgrey;
+                text-decoration: none;         
             }
         }
     }
@@ -223,6 +220,10 @@ input {
         flex-direction: column;
     }
 
+    @media (max-width:992px) {
+        margin-bottom: 70px;
+    }
+
     .col-1 {
         display: flex;
         margin: auto;
@@ -269,15 +270,21 @@ input {
         font-size: 16px;
     }
 
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
+    // &:not(:last-child) {
+    //     margin-bottom: 20px;
+    // }
 
     .btn {
         margin-top: 40px;
+        transition: background-color .2s;
 
         @media (max-width:769px) {
             margin-top: 10px;
+        }
+
+        &:hover {
+            color: $orange;
+            background-color: white;
         }
     }
 }
@@ -287,7 +294,7 @@ input {
 }
 
 .use {
-    background-image: url(../img/bg-use.jpg);
+    background-image: url(../img/bg-use.jpg), linear-gradient(to top, #F5F6FA 50%, white 0%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -341,8 +348,15 @@ input {
 
     .btn {
         margin-right: 20px;
+        transition: background-color .2s;
+
         @media (min-width:769px) and (max-width:998px) {
             padding: 5px 5px;
+        }
+
+        &:hover {
+            color: $orange;
+            background-color: white;
         }
     }
 
@@ -360,27 +374,279 @@ input {
     &-btn {
         background-color: white;
         color: $orange;
+        transition: background-color .2s;
+
+        &:hover {
+            color: white;
+            background-color: $orange
+        }
     }
 
     .fa-caret-right {
         font-size: 18px;
         margin-right: 7px;
         transform: translateY(10%);
+
+        &:hover {
+            color: $orange;
+            background-color: white;
+        }
     }
 }
 
+.serve {
+    background: linear-gradient(to bottom, #F5F6FA 70%, white 0%); 
+    background-color: #F5F6FA;
+    padding-top: 145px;
+
+    @media (max-width:992px) {
+        background:  linear-gradient(to bottom, #F5F6FA 100%, white 0%);
+        padding-top: 70px;
+    }
+
+    .heading {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .row {
+        display: flex;
+
+        @media (max-width: 998px) {
+            flex-direction: column;
+        }
+
+        .col {
+            background-color: white;
+            margin-right: 30px;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: $orange;
+                fill: white;
+                stroke: white;
+                color: white;
+            }
+
+            @media (max-width:998px) {
+                margin-right: 0;
+            }
+
+            &:first-child {
+              @media (max-width:998px) {
+                  margin-bottom: 30px;
+              }  
+            }
+
+            .icon-1 {
+                fill: $orange; 
+            }
+        
+            .btn {
+                background-color: white;
+                color: $orange;
+
+                @media (max-width:998px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .col-1 {
+
+         .btn {
+             background-color: white;
+             color: $orange;
+         }
+        }
+
+        .col, .col-1 {
+            border-radius: 10px;
+            text-align: center;
+            padding: 40px 88px;
+        }
+    }
+}
+
+.choose {
+    text-align: center;
+    margin-bottom: 171px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 70px;
+    }
+
+    .heading {
+        margin-bottom: 58px;
+
+        @media (max-width:768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .row {
+        display: flex;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .col {
+            &:not(:last-child) {
+                margin-right: 35px;
+
+                @media (max-width:768px) {
+                    margin-bottom: 30px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .text {
+        margin-top: 0;
+    }
+
+    &-heading {
+        margin-bottom: 2px;
+    }
+
+    &-icon {
+        margin-bottom: 15px;
+        fill: #58BEBF;
+
+        &:hover {
+            fill: $orange;
+        }
+
+        @media (max-width:768px) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.thanks {
+    .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 58px;
+
+        @media (max-width:576px) {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 30px;
+        
+        }
+
+        .heading {
+            max-width: 452px;
+            margin-bottom: 0;
+
+            @media (max-width:576px) {
+                max-width: 100%;
+            }
+        }
+
+        .text {
+            max-width: 400px;
+            margin-left: auto;
+
+            @media (max-width:576px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .row-2 {
+        display: flex;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        .col {
+            max-width: 33%;
+            margin-right: 30px;
+
+            @media (max-width: 1024px) {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            &:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+
+            .thanks-content {
+                padding: 31px 20px 31px 29px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @media (max-width: 1024px) {
+                    text-align: center;
+                    align-items: center;
+                }
+
+                .text {
+                    margin-bottom: 23px;
+                }
+
+                .text-2 {
+                    margin-bottom: 1px;
+                    font-weight: 700;
+                }
+
+                .city {
+                    color: #58BEBF;
+                }
+            }
+        }
+    }
+
+}
 .expert {
-    background-image: url(../img/bg_expert.jpg);
+    background-image: url(../img/bg-expert.jpg);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
     position: relative;
     padding: 155px 0 56px;
 
+    @media (max-width: 768px) {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 0;
+        padding-top: 100px;
+    }
+
     &-img {
         position: absolute;
         bottom: 0;
-        right: 20%;
+        left: 50%;
+
+        @media (max-width: 576px) {
+            max-width: 50%;
+            visibility: hidden;
+        }
+
+        @media (max-width: 992px) {
+            max-width: 50%;
+        }
+    }
+
+    .heading {
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     .col {
@@ -388,6 +654,10 @@ input {
 
         * {
             color: white;
+
+            @media (max-width: 1350px) {
+                color: $darkgrey;
+            }
         }
     }
 
@@ -395,6 +665,12 @@ input {
         background-color: #fff;
         margin-top: 40px;
         color: $darkgrey;
+        transition: background-color .2s;
+
+        &:hover {
+            background-color: $orange;
+            color: white;
+        }
     }
 }
 
@@ -469,6 +745,10 @@ input {
         a {
             margin-right: 25px;
             font-size: 20px;
+
+            &:hover {
+                text-shadow: 2px 2px 3px $darkgrey;
+            }
 
             .fa-facebook-square {
                 color: #4267B2;
